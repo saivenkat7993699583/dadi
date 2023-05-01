@@ -1,0 +1,16 @@
+
+#write a program to create player dictionary
+#dynamic
+
+d={}
+n=int(input("Enter number of players:"))
+for i in range(1,n+1):
+   pno=int(input("Enter the player jersey number:"))
+   pname=input("Enter the player name:")
+   d[pno]=pname
+print(d)
+
+
+#static
+d={1:"rohit",2:"dhawan",3:"kohil",4:"raina",5:"dhoni"}
+print(d)
