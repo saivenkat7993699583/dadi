@@ -1,0 +1,32 @@
+#write a program to prepare student dictionary
+#dynamic
+
+d={}
+n=int(input("Enter number of students:"))
+for i in range(1,n+1):
+   l=[]
+   sno=int(input("Enter the student number:"))
+   sname=input("Enter the student name:")
+   group=input("Enter the studying group:")
+   college=input("Enter the student college name:")
+   phn=int(input("Enter the student phone number:"))
+   l.append(sname)
+   l.append(group)
+   l.append(college)
+   l.append(phn)
+   d[sno]=l
+print(d)
+num=int(input("Enter the number:"))
+print("sname:",d[num][0])
+print("group:",d.get(num)[1])
+print("college:",d[num][2])
+print("phone number:",d.get(num)[3])
+
+
+#static
+d={1:["sai","ds","adityapkl",7993699583],2:["ramesh","mpcs","adckkd",123456]}
+n=int(input("Enter the number:"))
+print("name:",d[n][0])
+print("group:",d[n][1])
+print("college:",d.get(n)[2])
+print('phone number:',d.get(n)[3])
