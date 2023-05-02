@@ -1,0 +1,14 @@
+#write a program to find least freequency number from the list.
+
+l=list(map(int,input().split()))
+d={}
+for i in l:
+   if i not in d:
+      d[i]=1
+   else:
+      d[i]=d[i]+1
+s=d.values()
+v=min(s)
+for j in d:
+   if d[j]==v:
+      print(j)
