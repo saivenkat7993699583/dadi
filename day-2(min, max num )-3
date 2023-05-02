@@ -1,0 +1,12 @@
+#write a program to print max and min numbers from the list.
+
+l=list(map(int,input().split()))
+s=l[0]
+b=l[0]
+for i in l:
+   if i>b:
+      b=i
+   elif i<s:
+      s=i
+print("Minimum number is :",s)
+print("Maximum number is :",b)
