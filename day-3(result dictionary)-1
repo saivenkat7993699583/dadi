@@ -1,0 +1,17 @@
+ 
+#prepare student result dictionary
+
+try: 
+   d={}
+   n=int(input())
+   for i in range(1,n+1):
+      name,grade=input().split()
+      d[name]=grade
+   for i in range(1,n+1):
+      name=input()
+      if name in d:
+         print(name,d[name],'the exam')
+      else:
+         print("No result found")
+except:
+   print()
