@@ -1,0 +1,16 @@
+#write a program to print n febnocci series using class
+
+class feb:
+   def num(self,n):
+      i,a,b,c=1,1,0,0
+      while(i<=n):
+         print(c,end=' ')
+         c=a+b
+         a=b
+         b=c
+         i=i+1
+      return c
+m=int(input())
+f=feb()
+print(f.num(m))
+
