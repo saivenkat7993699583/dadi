@@ -1,0 +1,18 @@
+#write a program to print given number is palindrome or not using class
+
+class palin:
+   def num(self,n):
+      temp=n
+      res=0
+      while(n>0):
+         r=n%10
+         res=res*10+r
+         n=n//10
+      if temp==res:
+         print("Palindrome")
+      else:
+         print("Not palindrome")
+m=int(input())
+p=palin()
+p.num(m)
+        
