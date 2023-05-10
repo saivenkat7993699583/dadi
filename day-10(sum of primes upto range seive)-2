@@ -1,0 +1,20 @@
+
+#assignment2:
+    #write a program to print sum of prime numbers upto given range
+
+import math
+n=1000001
+seive=[1]*n
+seive[0]=0
+seive[1]=0
+x=int(math.sqrt(n))
+for i in range(2,x+1):
+   if seive[i]==1:
+      for j in range(i*i,n,i):
+         seive[j]=0
+a,b=map(int,input().split())
+s=0
+for i in range(a,b+1):
+   if seive[i]==1:
+      s=s+i
+print(s)
