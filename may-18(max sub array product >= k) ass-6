@@ -1,0 +1,13 @@
+#ass6:write a program to print count of maximum subarray product is greater than or equal to k
+
+
+l=list(map(int,input().split()))
+k=int(input())
+n=len(l)
+c=0
+for i in range(0,n):
+   s=0
+   for j in range(i,n):
+      if s+l[j]>=k: 
+         c=c+1
+print(c)
