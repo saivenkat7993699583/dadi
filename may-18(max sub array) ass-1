@@ -1,0 +1,15 @@
+'''
+ass1:
+    write a program to print maximum subarray sum
+'''
+l=list(map(int,input().split()))
+maxsub=l[0]
+n=len(l)
+sum=0
+for i in range(0,n):
+   sum=sum+l[i]
+   if sum>maxsub:
+      maxsub=sum
+   if sum<0:
+      sum=0
+print(maxsub)
